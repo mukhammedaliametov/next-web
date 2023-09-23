@@ -17,7 +17,7 @@ const page = () => {
   return (
     <div className="flex justify-center items-center text-center w-full">
       {loading ? (
-        <PuffLoader color="#36d7b7" size={90} loading={loading} className="mt-[20%]"/>
+        <PuffLoader color="#36d7b7" size={90} loading={loading} className="mt-[90%] md:mt-[20%]"/>
       ) : (
         <div className="w-full text-left">
           <Navbar />

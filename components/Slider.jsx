@@ -49,12 +49,12 @@ const Slider = () => {
       <h1 className="text-center text-3xl font-bold p-4">Gallery</h1>
       <div
         style={{ background: `url(${slides[currentIndex].url})` }}
-        className="w-full min-h-screen rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-[100%] rounded-2xl bg-center bg-cover duration-500"
       ></div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-[0] translate-y-[50%] left-5 text-2xl rounded p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[60%] md:top-[50%] -translate-x-[0] translate-y-[50%] left-5 text-2xl rounded p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft size={40} onClick={prevSlide} />
       </div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-[0] translate-y-[50%] right-5 text-2xl rounded p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[60%] md:top-[50%] -translate-x-[0] translate-y-[50%] right-5 text-2xl rounded p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight size={40} onClick={nextSlide}/>
       </div>
       <h2>{slides[currentIndex].title}</h2>
