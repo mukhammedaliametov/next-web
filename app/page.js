@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
+import Instagram from "@/components/Instagram";
 import { useEffect, useState } from "react";
 import PuffLoader from "react-spinners/PuffLoader";
 
@@ -26,6 +27,7 @@ const page = () => {
             message="I capture moments in nature and keep them alive."
           />
           <Slider />
+          <Instagram />
         </div>
       )}
     </div>
