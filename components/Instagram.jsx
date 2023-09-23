@@ -10,8 +10,8 @@ import IgImg6 from "@/public/ig-img-6.jpeg";
 const Instagram = () => {
   return (
     <div className="max-w-[1400px] h-[780px] mx-auto w-full p-16 px-4 relative text-center ">
-      <h1 className="text-3xl font-mooli py-2">Follow me on Instagram</h1>
-      <p className="text-2xl p-2">@ametov.me</p>
+      <h1 className="text-2xl md:text-3xl font-mooli py-2">Follow me on Instagram</h1>
+      <p className="text-1xl md:text-2xl p-2">@ametov.me</p>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 p-4'>
         <InstagramImg socialImg={IgImg1} />
         <InstagramImg socialImg={IgImg2} />

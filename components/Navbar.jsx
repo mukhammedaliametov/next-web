@@ -6,18 +6,15 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState(false);
-  const [textColor, setTextColor] = useState(false);
 
   const handleNav = () => setNav(!nav);
 
   useEffect(() => {
     const changeColor = () => {
       if(window.scrollY >= 70){
-        setColor('#fff')
-        setTextColor('#000')
+        setColor('#000000d2')
       }else{
         setColor('transparent')
-        setTextColor('#fff')
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -34,17 +31,17 @@ const Navbar = () => {
     <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in-out duration-300 py-2">
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 style={{color: `${textColor}`}} className="font-bold text-4xl">Captur</h1>
+          <h1 className="font-bold text-4xl text-white">Captur</h1>
         </Link>
-        <ul style={{color: `${textColor}`}} className="hidden sm:flex gap-8">
+        <ul className="hidden sm:flex gap-8 text-white">
           {Items.map((link) => (
             <li key={link}>
               <Link href={link.link}>{link.name}</Link>
             </li>
           ))}
         </ul>
-        <div style={{color: `${textColor}`}} className="sm:hidden block z-10 text-2xl" onClick={handleNav}>
-          {nav ? <AiOutlineClose color="#fff"/> : <AiOutlineMenu />}
+        <div className="sm:hidden block z-10 text-2xl" onClick={handleNav}>
+          {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
 
         {/* Mobile nav */}
