@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Raleway&display=swap');
 
 body{
-  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .custom-img {
