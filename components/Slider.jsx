@@ -40,7 +40,7 @@ const Slider = () => {
   }
 
   return (
-    <div className="max-w-[1400px] h-[780px] w-full m-auto p-16 px-4 relative group">
+    <div id="gallery" className="max-w-[1400px] h-[780px] w-full m-auto p-16 px-4 relative group">
       <h1 className="text-center text-3xl p-4 font-mooli">Gallery</h1>
       <div
         style={{ background: `url(${slides[currentIndex].url})` }}
