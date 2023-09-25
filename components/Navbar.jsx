@@ -8,6 +8,7 @@ const Navbar = () => {
   const [color, setColor] = useState(false);
 
   const handleNav = () => setNav(!nav);
+  const closeNav = () => setNav(false)
 
   useEffect(() => {
     const changeColor = () => {
@@ -54,7 +55,7 @@ const Navbar = () => {
         >
           <ul>
             {Items.map((link) => (
-              <li key={link} className="my-7 text-[1.5rem] hover:text-gray-500">
+              <li key={link} className="my-7 text-[1.5rem] hover:text-gray-500" onClick={closeNav}>
                 <Link href={link.link}>{link.name}</Link>
               </li>
             ))}
